@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --font-family-glikema: var(--font-glikema);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.name {
+  font-family: var(--font-glikema), serif;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
