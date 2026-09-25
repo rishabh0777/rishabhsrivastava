@@ -123,16 +123,18 @@ export default function Services() {
       id="services"
       aria-labelledby="services-heading"
       className="
-        relative w-full
-        overflow-hidden
-        bg-black
-        px-5
-        py-28
-        text-white
-        md:px-10
-        md:py-40
-        lg:px-[5vw]
-      "
+  relative w-full
+  overflow-hidden
+  bg-black
+  px-5
+  pb-28
+  pt-16
+  text-white
+  md:px-10
+  md:pb-40
+  md:pt-24
+  lg:px-[5vw]
+"
     >
       {/* SECTION INTRO */}
 
@@ -169,7 +171,7 @@ export default function Services() {
 
             <br />
 
-            <span className="text-pink-300">
+            <span className="text-[#C7F36B]">
               digital.
             </span>
           </h2>
@@ -236,7 +238,7 @@ export default function Services() {
                 w-full
                 origin-left
                 scale-x-0
-                bg-pink-300
+                bg-[#C7F36B]
               "
             />
 

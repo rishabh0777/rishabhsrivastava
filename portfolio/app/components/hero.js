@@ -182,7 +182,7 @@ export default function Home() {
       ref={sectionRef}
       id="home"
       aria-labelledby="hero-title"
-      className="relative min-h-[1200px] bg-black text-white"
+      className="relative bg-black text-white"
     >
       {/* PINNED VIEWPORT */}
 
@@ -244,7 +244,7 @@ export default function Home() {
             <div className="overflow-visible">
               <div
                 ref={line2Ref}
-                className="hero-line-inner whitespace-nowrap text-right text-[18vw] leading-[0.73] tracking-[-0.075em] text-pink-300 md:pr-[5vw] md:text-[12vw]"
+                className="hero-line-inner whitespace-nowrap text-right text-[18vw] leading-[0.73] tracking-[-0.075em] text-[#C7F36B] md:pr-[5vw] md:text-[12vw]"
               >
                 Digital
               </div>
@@ -308,7 +308,7 @@ export default function Home() {
 
               <br />
 
-              <span className="text-pink-300">
+              <span className="text-[#C7F36B]">
                 people remember.
               </span>
             </h2>

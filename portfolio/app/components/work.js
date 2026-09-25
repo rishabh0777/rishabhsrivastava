@@ -148,14 +148,14 @@ export default function Work() {
 
     gsap.to(row.querySelector(".project-title"), {
       x: 22,
-      color: "#f0b7cf",
+      color: "#C7F36B",
       duration: 0.45,
       ease: "power3.out",
     });
 
     gsap.to(row.querySelector(".project-number"), {
       x: 6,
-      color: "#f0b7cf",
+      color: "#C7F36B",
       duration: 0.4,
       ease: "power3.out",
     });
@@ -214,23 +214,25 @@ export default function Work() {
 
   return (
     <section
-      ref={sectionRef}
-      id="projects"
-      aria-labelledby="work-heading"
-      className="
-        work
-        relative
-        w-full
-        overflow-hidden
-        bg-black
-        px-5
-        py-28
-        text-white
-        md:px-10
-        md:py-40
-        lg:px-[5vw]
-      "
-    >
+  ref={sectionRef}
+  id="projects"
+  aria-labelledby="work-heading"
+  className="
+    work
+    relative
+    w-full
+    overflow-hidden
+    bg-black
+    px-5
+    pt-16
+    pb-28
+    text-white
+    md:px-10
+    md:pt-20
+    md:pb-40
+    lg:px-[5vw]
+  "
+>
       {/* CUSTOM CURSOR */}
 
       <div
@@ -250,7 +252,7 @@ export default function Work() {
           items-center
           justify-center
           rounded-full
-          bg-pink-300
+          bg-[#C7F36B]
           text-[8px]
           font-medium
           uppercase
@@ -267,7 +269,7 @@ export default function Work() {
 
       <div className="mb-7 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="h-[5px] w-[5px] rounded-full bg-pink-300" />
+          <span className="h-[5px] w-[5px] rounded-full bg-[#C7F36B]" />
 
           <p className="text-[9px] uppercase tracking-[0.25em] text-white/40">
             03 / Selected Work
@@ -301,7 +303,7 @@ export default function Work() {
           <span className="ml-[14vw] text-white/20">
             Works
           </span>
-          <span className="text-pink-300">.</span>
+          <span className="text-[#C7F36B]">.</span>
         </h2>
       </div>
 
@@ -371,7 +373,7 @@ export default function Work() {
                 w-full
                 origin-left
                 scale-x-0
-                bg-pink-300
+                bg-[#C7F36B]
               "
             />
 

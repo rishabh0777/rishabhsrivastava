@@ -86,7 +86,7 @@ export default function Contact() {
 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <span className="h-[5px] w-[5px] rounded-full bg-pink-300" />
+          <span className="h-[5px] w-[5px] rounded-full bg-[#C7F36B]" />
 
           <p className="text-[9px] uppercase tracking-[0.25em] text-white/40">
             05 / Contact
@@ -126,7 +126,7 @@ export default function Contact() {
 
               <br />
 
-              <span className="text-pink-300">
+              <span className="text-[#C7F36B]">
                 exist.
               </span>
             </h2>
@@ -167,7 +167,7 @@ export default function Contact() {
                   tracking-[-0.04em]
                   transition-colors
                   duration-300
-                  hover:text-pink-300
+                  hover:text-[#C7F36B]
                   sm:text-[4vw]
                   md:text-[2.2vw]
                 "
@@ -183,7 +183,7 @@ export default function Contact() {
                     duration-300
                     group-hover:-translate-y-1
                     group-hover:translate-x-1
-                    group-hover:text-pink-300
+                    group-hover:text-[#C7F36B]
                   "
                 >
                   ↗
@@ -223,7 +223,7 @@ export default function Contact() {
                   tracking-[0.2em]
                   text-white/40
                   transition-colors
-                  hover:text-pink-300
+                  hover:text-[#C7F36B]
                 "
               >
                 Or visit Webli Studio

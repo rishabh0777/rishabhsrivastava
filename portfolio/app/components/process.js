@@ -55,6 +55,23 @@ export default function Process() {
 
   useGSAP(
     () => {
+
+      /* --------------------------------
+          SECTION BLACK BACKGROUND TO WHITE TRANSITION
+        -------------------------------- */
+        gsap.fromTo(sectionRef.current, {
+          backgroundColor: "#000000",
+        }, {
+          backgroundColor: "#C7F36B",
+          duration: 1,
+          ease: "power1.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "bottom 50%",
+            // scrub: true,
+          },
+        });
       /* --------------------------------
          LARGE HEADING
       -------------------------------- */
