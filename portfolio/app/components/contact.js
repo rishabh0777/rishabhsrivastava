@@ -267,34 +267,37 @@ export default function Contact() {
 
         {/* SOCIALS */}
 
-        <div className="flex gap-5 md:justify-center">
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-white"
-          >
-            LinkedIn ↗
-          </a>
+<div className="flex gap-5 md:justify-center">
+  <a
+    href="https://www.linkedin.com/in/rishabh-srivastava-1b17461b0"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Rishabh Srivastava on LinkedIn"
+    className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-[#C7F36B]"
+  >
+    LinkedIn ↗
+  </a>
 
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-white"
-          >
-            GitHub ↗
-          </a>
+  <a
+    href="https://github.com/rishabh0777"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Rishabh Srivastava on GitHub"
+    className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-[#C7F36B]"
+  >
+    GitHub ↗
+  </a>
 
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-white"
-          >
-            Instagram ↗
-          </a>
-        </div>
+  <a
+    href="https://www.instagram.com/_codexdev.rishabh/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Rishabh Srivastava on Instagram"
+    className="text-[9px] uppercase tracking-[0.16em] text-white/40 transition-colors hover:text-[#C7F36B]"
+  >
+    Instagram ↗
+  </a>
+</div>
 
         <p className="text-[8px] uppercase tracking-[0.18em] text-white/25 md:text-right">
           © {new Date().getFullYear()} / India
