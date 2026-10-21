@@ -61,11 +61,13 @@ export default function Services() {
           x: index % 2 === 0 ? -80 : 80,
           opacity: 0,
           duration: 1.1,
-          ease: "power3.out",
+          ease: "none",
 
           scrollTrigger: {
             trigger: row,
-            start: "top 88%",
+            start: "top bottom",
+            end: "top 50%",
+            scrub: 0.8,
           },
         });
       });
@@ -140,7 +142,7 @@ export default function Services() {
 
       <div className="mb-20 md:mb-28">
         <div className="mb-5 flex items-center gap-3">
-          <span className="h-[5px] w-[5px] rounded-full bg-pink-300" />
+          <span className="h-[5px] w-[5px] rounded-full bg-[#C7F36B]" />
 
           <p className="text-[9px] uppercase tracking-[0.25em] text-white/40 md:text-[10px]">
             02 / What I do

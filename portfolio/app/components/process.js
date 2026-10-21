@@ -49,6 +49,7 @@ export default function Process() {
   const [openIndex, setOpenIndex] = useState(0);
 
   const sectionRef = useRef(null);
+  const backgroundRef = useRef(null);
   const headingRef = useRef(null);
   const statementRef = useRef(null);
   const rowsRef = useRef([]);
@@ -56,21 +57,31 @@ export default function Process() {
   useGSAP(
     () => {
 
-      /* --------------------------------
-          SECTION BLACK BACKGROUND TO WHITE TRANSITION
-        -------------------------------- */
-        gsap.fromTo(sectionRef.current, {
-          backgroundColor: "#000000",
-        }, {
-          backgroundColor: "#C7F36B",
-          duration: 1,
-          ease: "power1.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top top",
-            end: "bottom 50%",
-            // scrub: true,
+      const backgroundTransition = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+          end: "bottom 30%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+
+      backgroundTransition
+        .fromTo(
+          backgroundRef.current,
+          {
+            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
           },
+          {
+            clipPath: "polygon(0 0%, 100% 5%, 100% 100%, 0 100%)",
+            duration: 0.9,
+            ease: "power4.inOut",
+          }
+        )
+        .to(backgroundRef.current, {
+          clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0 100%)",
+          duration: 0.35,
+          ease: "power3.out",
         });
       /* --------------------------------
          LARGE HEADING
@@ -137,6 +148,7 @@ export default function Process() {
       className="
         process
         relative
+        isolate
         w-full
         overflow-hidden
         bg-white
@@ -148,6 +160,12 @@ export default function Process() {
         lg:px-[5vw]
       "
     >
+      <div
+        ref={backgroundRef}
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-[-1] bg-[#C7F36B]"
+      />
+
       {/* --------------------------------
           SECTION META
       -------------------------------- */}

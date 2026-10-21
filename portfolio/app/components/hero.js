@@ -115,7 +115,7 @@ export default function Home() {
 
         .call(() => {
           createScrollAnimation();
-          ScrollTrigger.refresh();
+          ScrollTrigger.refresh(true);
         });
 
       /* ==========================================
@@ -131,6 +131,7 @@ export default function Home() {
             scrub: 1.2,
             pin: stageRef.current,
             anticipatePin: 1,
+            refreshPriority: 1,
             invalidateOnRefresh: false,
           },
         });
