@@ -16,11 +16,18 @@ const works = [
     link: "https://webli.vercel.app/",
   },
   {
-    title: "Lion's Den Cafe",
-    description: "Cafe Experience, Jaunpur",
+    title: "Xvital",
+    description: "Personalized Nutrition & Lifestyle System",
     type: "Design / Development",
     year: "2026",
-    link: "https://lionsdencafe.vercel.app/",
+    link: "https://xvital.in/",
+  },
+  {
+    title: "Launch Haus",
+    description: "Business Development & Marketing Agency",
+    type: "Agency / Development",
+    year: "2026",
+    link: "https://www.launchhaus.in/",
   },
   {
     title: "Aathavan Films",
@@ -35,21 +42,7 @@ const works = [
     type: "Hospitality / Development",
     year: "2026",
     link: "https://serene-stays.vercel.app/",
-  },
-  {
-    title: "Jerdon Villa",
-    description: "Luxury Pool Villa",
-    type: "Hospitality / Development",
-    year: "2026",
-    link: "https://www.jerdon.in/",
-  },
-  {
-    title: "Timeless Vogue",
-    description: "Men's Fashion E-Commerce",
-    type: "Commerce / Development",
-    year: "2025",
-    link: "https://timelessvogue.vercel.app/",
-  },
+  }
 ];
 
 export default function Work() {
