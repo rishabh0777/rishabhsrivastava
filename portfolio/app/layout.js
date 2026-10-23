@@ -1,6 +1,7 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import StructuredData from "./structured-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,9 +32,13 @@ export const metadata = {
 
 
   title: {
-    default: "Rishabh Srivastava | Full Stack Developer & Founder of Webli Studio",
-    template: "%s | Rishabh Srivastava",
-  },
+  absolute: "Rishabh Srivastava | Full Stack Developer",
+},
+applicationName: "Rishabh Srivastava",
+
+alternates: {
+  canonical: "/",
+},
 
   description:
     "Rishabh Srivastava is a Full Stack Developer and Founder of Webli Studio, building modern, interactive and scalable digital experiences with Next.js, React, Node.js, MongoDB, GSAP and modern web technologies.",
@@ -130,7 +135,7 @@ export const metadata = {
     description:
       "Portfolio of Rishabh Srivastava, Full Stack Developer and Founder of Webli Studio. Explore selected web development projects, creative digital experiences and modern full-stack work.",
 
-    siteName: "Rishabh Srivastava Portfolio",
+    siteName: "Rishabh Srivastava",
 
     images: [
       {
@@ -174,7 +179,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} ${glikema.variable} antialiased`}
     >
-      <body>{children}</body>
+      
+      <body>
+        <StructuredData />
+        {children}
+      </body>
     </html>
   );
 }
